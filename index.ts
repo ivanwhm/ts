@@ -2,4 +2,4 @@ import { Car } from './Car';
 
 const myCar = new Car();
 
-console.log(myCar);
+myCar.drive(80);
