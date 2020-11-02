@@ -1,7 +1,13 @@
-const add = (a: number, b: number): number => {
-  return a + b;
+const post = {
+  title: "Latest TypeScript News",
+  daysOld: 0,
+  published: true,
 };
 
-const joinStrings = (a: string, b: string): string => {
-  return a.concat(b);
+const printPost = (postToPrint: {
+  title: string;
+  daysOld: number;
+  published: boolean;
+}) => {
+  return `${postToPrint.title} (${postToPrint.daysOld} days old).`;
 };
