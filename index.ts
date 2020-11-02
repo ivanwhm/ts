@@ -1,17 +1,18 @@
-interface Post {
-  title: string;
-  daysOld: number;
-  published: boolean;
+class Car {
+  color: string;
+  year: number;
+
+  constructor(color: string, year: number) {
+    this.color = color;
+    this.year = year;
+  }
+
+  drive() {
+    console.log("Vroom");
+  }
 }
 
-const post: Post = {
-  title: "Latest TypeScript News",
-  daysOld: 0,
-  published: true,
-};
+const myCar = new Car("Red", 2012);
+myCar.drive();
 
-const printPost = (postToPrint: Post): string => {
-  return `${postToPrint.title} (${postToPrint.daysOld} days old).`;
-};
-
-printPost(post);
+console.log(myCar.color, myCar.year);
