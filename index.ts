@@ -1,7 +1,7 @@
-let myName: string;
+const add = (a: number, b: number): number => {
+  return a + b;
+};
 
-if (1 === 1) {
-  myName = "Ivan";
-} else {
-  myName = "José";
-}
+const joinStrings = (a: string, b: string): string => {
+  return a.concat(b);
+};
