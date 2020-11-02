@@ -1,5 +1,20 @@
-import { Car } from './Car';
+interface Driveable {
+  speed: number;
+  drive(): string;
+}
+
+class Car implements Driveable {
+  speed = 10;
+
+  drive(): string {
+    return `Driving at ${this.speed} km/h.`;
+  }
+}
 
 const myCar = new Car();
 
-myCar.drive(80);
+const startDriving = (vehicle: Driveable) => {
+  console.log(vehicle.drive());
+};
+
+startDriving(myCar);
