@@ -1,6 +1,5 @@
-const Component = (target: any) => {
-  console.log(target);
-};
+import { Car } from './Car';
 
-@Component
-class Car {}
+const myCar = new Car();
+
+console.log(myCar);
