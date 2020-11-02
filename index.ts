@@ -1,20 +1,6 @@
-class Car {
-  constructor(public color: string, private year: number) {}
+const Component = (target: any) => {
+  console.log(target);
+};
 
-  public drive() {
-    this.putInGear();
-    this.pressPedal();
-    this.turnWheel();
-  }
-
-  private putInGear() {}
-
-  private pressPedal() {}
-
-  private turnWheel() {}
-}
-
-const myCar = new Car('Red', 2012);
-myCar.drive();
-
-console.log(myCar.color);
+@Component
+class Car {}
